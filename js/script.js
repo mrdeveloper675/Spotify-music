@@ -164,6 +164,11 @@ async function main() {
     document.querySelector(".range input").addEventListener("input", (e) => {
         currentSong.volume = parseInt(e.target.value) / 100;
     });
+    // Disclaimer add
+// const disclaimer = document.createElement("div");
+// disclaimer.className = "disclaimer";
+// disclaimer.innerText = "This is a project for educational purposes only and not affiliated with Spotify.";
+// document.body.appendChild(disclaimer);
 }
 
 main();

@@ -105,7 +105,7 @@ body {
     gap: 15px;
     flex-wrap: wrap;
     overflow-y: auto;
-    max-height: 60vh;
+    max-height: 100vh;
 }
 
 /* Card Image Fix */
@@ -152,6 +152,25 @@ body {
     cursor: pointer;
     --a: 1;
     --b: 100px;
+}
+.disclaimer{
+  position: fixed;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 12px;
+  opacity: 0.8;
+  text-align: center;
+  background: rgba(0,0,0,0.7);
+  padding: 8px 14px;
+  border-radius: 8px;
+  color: #fff;
+  z-index: 9999;
+
+  /* Responsive behavior */
+  width: 90%;
+  max-width: 600px;
+  line-height: 1.4;
 }
 
 .play_music {
@@ -203,7 +222,7 @@ body {
     justify-content: center;
     align-items: center;
     position: fixed;
-    bottom: 30px;
+    bottom: 40px;
     filter: invert(1);
     background: #e2d9d9;
     border-radius: 20px;
@@ -455,4 +474,21 @@ body {
 
 
 
+}
+
+/* Mobile screens */
+@media (max-width: 600px){
+  .disclaimer{
+    font-size: 11px;
+    padding: 8px 10px;
+    bottom: 6px;
+  }
+}
+
+/* Very small screens */
+@media (max-width: 360px){
+  .disclaimer{
+    font-size: 10px;
+    padding: 6px 8px;
+  }
 }
