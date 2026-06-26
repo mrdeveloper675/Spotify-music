@@ -164,6 +164,20 @@ async function main() {
     document.querySelector(".range input").addEventListener("input", (e) => {
         currentSong.volume = parseInt(e.target.value) / 100;
     });
+    
    }
-
+   
 main();
+
+// =========================
+// Disclaimer
+// =========================
+
+const disclaimer = document.getElementById("disclaimer");
+const closeDisclaimer = document.getElementById("closeDisclaimer");
+
+if (closeDisclaimer) {
+    closeDisclaimer.addEventListener("click", () => {
+        disclaimer.style.display = "none";
+    });
+}
